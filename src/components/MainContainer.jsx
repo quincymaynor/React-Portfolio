@@ -10,23 +10,26 @@ export default function PortfolioContainer() {
 
   // Use the current page state to conditionally return the component for the selected page
   const renderPage = () => {
-    if (currentPage === 'AboutMe') {
-      return <AboutMe />;
-    }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }
     if (currentPage === 'Contact') {
       return <Contact />;
     }
-    return <Resume />;
+    if (currentPage === 'Resume') {
+      return <Resume />;
+    }
+    return <AboutMe />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <header class="siteheader">
+        <h1>Quincy Maynor</h1>
+        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
+      </header>
       <main className="mx-3">{renderPage()}</main>
     </div>
   );
