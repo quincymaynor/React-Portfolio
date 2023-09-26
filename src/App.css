@@ -140,6 +140,7 @@ main {
 
 .aboutme-content, .portfolio-content, .contactme-content {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

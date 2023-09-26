@@ -18,8 +18,8 @@ function Contact(props) {
 
   return (
     <div>
+      <h2 class="title3">Contact Me</h2>
       <form class="contactme" id="contactme" onSubmit={handleSubmit}>
-        <h2 class="title3">Contact Me</h2>
         <input
           type="text"
           placeholder="Name"

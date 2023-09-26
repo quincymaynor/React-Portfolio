@@ -85,11 +85,16 @@ a:hover {
   color: var(--light);
 }
 
-nav {
+.nav-tabs {
   display: flex;
-  justify-content: right;
-  margin: 15px 0px;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: var(--light);
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 15px 15px;
 }
 
 .button {
