@@ -5,12 +5,18 @@
   --shadow: #9e8e9c;
   --normal-weight: 400;
   --bold-weight: 700;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 } 
 
 * {
-  font-family: "Jura", sans-serif;
-  font-size: medium;
+  font-family: "Jura", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: var(--normal-weight);
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -53,6 +59,7 @@ body {
 
 h1 {
   font-size: 3rem;
+  line-height: 1.1;
   font-weight: var(--bold-weight);
   margin-bottom: 15px;
 }
@@ -69,7 +76,16 @@ h3 {
   margin-bottom: 10px;
 }
 
-header nav {
+a {
+  font-weight: 500;
+  color: var(--dark);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--light);
+}
+
+/* header nav {
   display: flex;
   justify-content: right;
   margin: 15px 0px;
@@ -87,6 +103,25 @@ header nav a {
 header nav a:hover {
   color: var(--light);
   background-color: var(--dark);
+} */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--dark);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--shadow);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 main {
@@ -170,7 +205,7 @@ footer {
   background: var(--dark);
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   main, body, .aboutme, .portfolio, .contactme {
       flex-direction: column;
   } 
@@ -207,7 +242,7 @@ footer {
   .portfolio-content {
     flex-direction: column;
   }
-}
+} */
 
 /* * {
   box-sizing: border-box;
