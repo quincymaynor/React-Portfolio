@@ -31,6 +31,19 @@ export default function PortfolioContainer() {
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
       </header>
       <main className="mx-3">{renderPage()}</main>
+      <footer>
+        <div class="contactme-content"> 
+            <section class="button">
+              <p>Phone: (612) 442 3948</p>
+            </section>   
+            <section class="button">
+                <p>Email: quincymaynor@gmail.com</p>
+            </section>
+            <section class="button">
+                <a href="https://github.com/quincymaynor">GitHub: quincymaynor</a>
+            </section>
+        </div>
+      </footer>
     </div>
   );
 }
