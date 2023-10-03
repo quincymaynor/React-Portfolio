@@ -17,33 +17,35 @@ function Contact(props) {
   };
 
   return (
-    <div>
-      <h2 class="title3">Contact Me</h2>
-      <form class="contactme" id="contactme" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Name"
-          value={input}
-          name="name"
-          className="name-input"
-        ></input>
-        <input
-          type="text"
-          placeholder="Email"
-          value={input}
-          name="email"
-          className="email-input"
-        ></input>
-        <input
-          type="text"
-          placeholder="Message"
-          value={input}
-          name="message"
-          className="message-input"
-        ></input>
-        <button className="contact-button">Submit</button>
-      </form>
-    </div>
+    <>
+      <h1 class="title4">Contact Me</h1>
+      <div>
+        <form class="contactme" id="contactme" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            value={input}
+            name="name"
+            className="name-input"
+          ></input>
+          <input
+            type="text"
+            placeholder="Email"
+            value={input}
+            name="email"
+            className="email-input"
+          ></input>
+          <input
+            type="text"
+            placeholder="Message"
+            value={input}
+            name="message"
+            className="message-input"
+          ></input>
+          <button className="contact-button">Submit</button>
+        </form>
+      </div>
+    </>
   )
 }
 
