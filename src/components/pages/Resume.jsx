@@ -1,10 +1,12 @@
 export default function Resume() {
   return (
-    <div class="resume" id="resume">
-      <h1>Resume Page</h1>
-      <p class="resume-content" id="resume-content">
-        My Resume will be here
-      </p>
-    </div>
+    <>
+      <h1 class="title3">Resume</h1>
+      <div class="resume" id="resume">
+        <p class="resume-content" id="resume-content">
+          My Resume is soon to come
+        </p>
+      </div>
+    </>
   );
 }
