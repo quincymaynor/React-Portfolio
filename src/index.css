@@ -1,0 +1,128 @@
+:root {
+  --dark: #252525;
+  --light: #d7d7d7;
+  --nav:  #a4a4a4;
+  --shadow: #9e8e9c;
+  --normal-weight: 400;
+  --bold-weight: 700;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} 
+
+.aboutme, .portfolio, .resume, .contactme {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 50px 50px 50px 10px;
+  background-color: var(--light);
+}
+
+.aboutme-content, .portfolio-content, .resume-content, .contactme-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  padding: 50px;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 48%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 5px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: var(--nav);
+}
+
+.project-card:first-child {
+  flex: 1 0 95%;
+}
+
+.project-card > header {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  bottom: auto;
+  text-align: center;
+}
+
+.project-card > p {
+  width: 100%;
+  text-align: center;
+}
+
+.project-card > img {
+  width: 100%;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 240px;
+  justify-content: center;
+  padding: 5px;
+  margin: 20px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  text-align: center;
+  color: var(--dark);
+  background: var(--shadow);
+}
+
+/* @media screen and (max-width: 992px) {
+  main, body, .aboutme, .portfolio, .contactme {
+      flex-direction: column;
+  } 
+  
+  .aboutme, .portfolio, .contactme {
+      padding: 50px;
+  }
+
+  .title1, .title2, .title3 {
+      display: flex;
+      width: 100%;
+      height: 20%;
+  }
+
+  .title1 {
+      background-image: url(/assets/images/ABH-Header1.png);
+  }
+  
+  .title2 {
+      background-image: url(/assets/images/ABH-Header2.png);
+  }
+  
+  .title3 {
+      background-image: url(/assets/images/ABH-Header3.png);
+  }
+
+  .aboutme-content, .portfolio-content, .contactme-content {
+      width: 100%;
+      height: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-content {
+    flex-direction: column;
+  }
+} */
