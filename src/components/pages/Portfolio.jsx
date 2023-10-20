@@ -22,6 +22,15 @@ export default function Portfolio() {
               <a href="https://github.com/nicholewilburn/Tabletop-Character-Creator">Link to the GitHub Repo</a>
             </header>
           </section>
+          <section class="project-card">
+            <img src="" alt="Screenshot of the campaign creator dashboard"/>
+            <header>
+              <h3>Campaign Creator</h3>
+              <p>An app for character creation. The place to keep all your character ideas and brainstorm new ones.</p>
+              <a href="https://secret-coast-66847-6953fb83e518.herokuapp.com/">Link to Campaign Creator</a>
+              <a href="https://github.com/quincymaynor/campaign-planner">Link to the GitHub Repo</a>
+            </header>
+          </section>
         </div>
       </div>
     </>
