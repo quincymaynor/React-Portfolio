@@ -23,7 +23,7 @@ export default function Portfolio() {
             </header>
           </section>
           <section class="project-card">
-            <img src="" alt="Screenshot of the campaign creator dashboard"/>
+            <img src="./CampaignPlannerDashboard.png" alt="Screenshot of the campaign creator dashboard"/>
             <header>
               <h3>Campaign Creator</h3>
               <p>An app for character creation. The place to keep all your character ideas and brainstorm new ones.</p>
