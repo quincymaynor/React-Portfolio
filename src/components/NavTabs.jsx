@@ -4,6 +4,11 @@ import Container from '@mui/material/Container';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
+import Portfolio from './pages/Portfolio';
+import AboutMe from './pages/AboutMe';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+
 function samePageLinkNavigation(event) {
   if (
     event.defaultPrevented ||
@@ -34,6 +39,23 @@ function LinkTab(props) {
 }
 
 export default function NavTabs({ value, handleChange }) {
+  
+  // Use the value state to conditionally return the component for the selected page
+  const renderPage = () => {
+    if (value === 0) {
+        return <AboutMe />;
+      }
+    if (value === 1) {
+    return <Portfolio />;
+    }
+    if (value === 2) {
+        return <Resume />;
+      }
+    if (value === 3) {
+      return <Contact />;
+    }
+  };
+
   return (
       <Box
         sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
@@ -49,6 +71,7 @@ export default function NavTabs({ value, handleChange }) {
           <LinkTab label="Resume" href="resume" />
           <LinkTab label="Contact" href="contact" />
         </Tabs>
+        <Container>{renderPage()}</Container>
       </Box>
     );
   
