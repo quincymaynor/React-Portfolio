@@ -1,27 +1,14 @@
 import './App.css';
-import MainContainer from './components/MainContainer';
+// import MainContainer from './components/MainContainer';
+import AltMain from './components/AltMain';
 
 function App() {
   return (
     <div>
-      <MainContainer />
+      {/* <MainContainer /> */}
+      <AltMain />
     </div>
   );
 }
 
 export default App;
-
-// import './App.css';
-// import * as React from 'react'
-// import { ChakraProvider } from '@chakra-ui/react'
-// import MainContainer from './components/MainContainer';
-
-// function App() {
-//   return (  
-//     <ChakraProvider>
-//       <MainContainer />
-//     </ChakraProvider>
-//   );
-// }
-
-// export default App;
