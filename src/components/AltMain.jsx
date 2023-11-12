@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function MainContainer() {
+export default function AltMain() {
 
   const [value, setValue] = useState(0);
 
@@ -29,7 +29,7 @@ export default function MainContainer() {
         <h1>Quincy Maynor</h1>
         </Container>
         <NavTabs value={value} handleChange={handleChange}/>
-        <Container>
+        {/* <Container>
             <Grid container spacing={8}>
                 <Grid item xs={4}>
                 <Item>Phone: (612) 442 3948</Item>
@@ -41,7 +41,7 @@ export default function MainContainer() {
                 <Item><a href="https://github.com/quincymaynor">GitHub: quincymaynor</a></Item>
                 </Grid>
             </Grid>
-        </Container>
+        </Container> */}
     </Box>
     );
 }
