@@ -1,3 +1,7 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 import { useState } from 'react';
 
 function Contact(props) {
@@ -19,6 +23,34 @@ function Contact(props) {
   return (
     <>
       <h1 class="title4">Contact Me</h1>
+      <Box
+        component="form"
+        sx={{
+          '& .MuiTextField-root': { m: 1, width: '25ch' },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <TextField 
+          id="outlined-basic" 
+          label="Name" 
+          variant="outlined"
+          size="small"
+        />
+        <TextField 
+          id="outlined-basic" 
+          label="Email" 
+          variant="outlined"
+          size="small" 
+        />
+        <TextField
+          id="outlined-multiline-static"
+          label="Message"
+          multiline
+          rows={10}
+          size="small"
+        />
+      </Box>
       <div>
         <form class="contactme" id="contactme" onSubmit={handleSubmit}>
           <input
