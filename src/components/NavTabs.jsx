@@ -58,7 +58,7 @@ export default function NavTabs({ value, handleChange }) {
 
   return (
       <Box
-        sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
+        sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', marginBottom: '20px' }}
       >
         <Tabs
           orientation="vertical"
@@ -72,7 +72,7 @@ export default function NavTabs({ value, handleChange }) {
           <LinkTab label="Contact" href="contact" />
         </Tabs>
         <Container>{renderPage()}</Container>
-      </Box>
+      </Box >
     );
   
 }

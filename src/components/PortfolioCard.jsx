@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function PortfolioCard({ alt, img, title, description, site, repo }) {
   return (
-    <Card sx={{ maxWidth: 500 }}>
+    <Card >
       <CardMedia
         component="img"
         alt={alt}
