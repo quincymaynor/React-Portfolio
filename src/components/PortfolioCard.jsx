@@ -15,7 +15,7 @@ export default function PortfolioCard({ alt, img, title, description, site, repo
         height="250"
         image={img}
       />
-      <CardContent>
+      <CardContent >
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -24,8 +24,8 @@ export default function PortfolioCard({ alt, img, title, description, site, repo
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={site}>Visit the App</Button>
-        <Button size="small" href={repo}>GitHub Repo</Button>
+        <Button variant="contained" color="secondary" size="small" href={site}>Visit the App</Button>
+        <Button variant="contained" color="secondary" size="small" href={repo}>Check the GitHub Repo</Button>
       </CardActions>
     </Card>
   );

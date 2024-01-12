@@ -1,3 +1,5 @@
+import Footer from '../Footer';
+
 export default function AboutMe() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function AboutMe() {
           More things about me to come soon!
         </p>
       </div>
+      <Footer/>
     </>
   );
 }
