@@ -11,9 +11,6 @@ export default function AboutMe() {
       </Typography>
       <Box class="aboutme" id="aboutme">
         <Typography variant="body1" gutterBottom>
-
-        </Typography>
-        <Typography variant="body1" gutterBottom>
           My name is Quincy Maynor, and I am a recent U of M Coding Bootcamp graduate. I went to college for visual arts and chemistry, but was recently drawn to combining my background in STEM and art through coding. 
         </Typography>
       </Box>

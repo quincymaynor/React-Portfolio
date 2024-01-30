@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'
 
 export default function Footer() {
     return (
-        <container>
+        <Container>
             <br></br>
             <br></br>
             <br></br>
@@ -13,15 +13,15 @@ export default function Footer() {
             <br></br>
             <Grid container justifyContent="space-between" alignItems="flex-end">
                 <Grid item>
-                <Button variant="contained" color="secondary" size="small">Phone: (612) 442 3948</Button>
+                    <Button variant="contained" color="secondary" size="small" href="mailto: quincymaynor@gmail.com">My Email</Button>
                 </Grid>
                 <Grid item>
-                <Button variant="contained" color="secondary" size="small" href="mailto: quincymaynor@gmail.com">Email: quincymaynor@gmail.com</Button>
+                    <Button variant="contained" color="secondary" size="small" href="https://github.com/quincymaynor">My GitHub</Button>
                 </Grid>
                 <Grid item>
-                <Button variant="contained" color="secondary" size="small"><a href="https://github.com/quincymaynor">GitHub: quincymaynor</a></Button>
+                    <Button variant="contained" color="secondary" size="small" href="https://www.linkedin.com/in/quincy-maynor/">My LinkedIn</Button>
                 </Grid>
             </Grid>
-        </container>
+        </Container>
     );
   }
