@@ -16,7 +16,7 @@ export default function Footer() {
                 <Button variant="contained" color="secondary" size="small">Phone: (612) 442 3948</Button>
                 </Grid>
                 <Grid item>
-                <Button variant="contained" color="secondary" size="small">Email: quincymaynor@gmail.com</Button>
+                <Button variant="contained" color="secondary" size="small" href="mailto: quincymaynor@gmail.com">Email: quincymaynor@gmail.com</Button>
                 </Grid>
                 <Grid item>
                 <Button variant="contained" color="secondary" size="small"><a href="https://github.com/quincymaynor">GitHub: quincymaynor</a></Button>

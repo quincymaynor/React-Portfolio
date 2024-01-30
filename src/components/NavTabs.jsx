@@ -30,7 +30,7 @@ function LinkTab(props) {
       onClick={(event) => {
         if (samePageLinkNavigation(event)) {
           event.preventDefault();
-          handleChange(props.value);
+          // handleChange(props.value);
         }
       }}
       {...props}

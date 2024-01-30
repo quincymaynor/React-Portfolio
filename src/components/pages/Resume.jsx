@@ -24,6 +24,8 @@ export default function Resume() {
               Backend: MySQL, MongoDB, Express, ReactJS, Node, Handlebars, Webpack
             </Typography>
 
+            <br></br>
+
             <Typography gutterBottom variant="h6" component="div">
               PROJECT EXPERIENCE
             </Typography>
@@ -39,6 +41,8 @@ export default function Resume() {
             Tools/Languages: Javascript, Node.js, Express,js, GraphQL, MongoDB, Mongoose ODM, Apollo,  JWT, React, HTML/CSS, Heroku
             </Typography>
             
+            <br></br>
+
             <Typography gutterBottom variant="body2">
               Character Creator App | Deployed — Project Manager
             </Typography>
@@ -49,6 +53,8 @@ export default function Resume() {
             <Typography gutterBottom variant="body2" color="text.secondary">
             Tools/Languages: Javascript, Node.js, MySQL2, Express, Sequelize,  Bcrypt, HTML/CSS, Bulma, Heroku
             </Typography>
+
+            <br></br>
 
             <Typography gutterBottom variant="body2">
               Minimum Viable Playlist App | Repo | Deployed — Developer
@@ -61,6 +67,7 @@ export default function Resume() {
             Tools/Languages: JQuery, Javascript, HTML, CSS, Materialize CSS
             </Typography>
 
+            <br></br>
 
             <Typography gutterBottom variant="h6" component="div">
               WORK EXPERIENCE
@@ -82,6 +89,8 @@ export default function Resume() {
               - Installed drywall, fixed and refinished woodwork, performed minor electrical and plumbing fixes, painted walls
             </Typography>
 
+            <br></br>
+
             <Typography gutterBottom variant="body2">
               Eastside Community Co-op — Housekeeping and Maintenance Lead
             </Typography>
@@ -97,6 +106,8 @@ export default function Resume() {
             <Typography gutterBottom variant="body2" color="text.secondary">
               - Addressed all maintenance issues in the store, including basic plumbing, electrical, and mechanical problems
             </Typography>
+
+            <br></br>
 
             <Typography gutterBottom variant="h6" component="div">
               EDUCATION
