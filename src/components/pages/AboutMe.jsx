@@ -1,17 +1,22 @@
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
 import Footer from '../Footer';
 
 export default function AboutMe() {
   return (
     <>
-      <h1 class="title1">About Me</h1>
-      <div class="aboutme" id="aboutme">
-        <p>
-          I am new to coding and excited to bring my commitment to inclusivity, accessibility, and passion for nerd things to my work!
-        </p>
-        <p>
-          More things about me to come soon!
-        </p>
-      </div>
+      <Typography variant="h4" gutterBottom>
+        About Me
+      </Typography>
+      <Box class="aboutme" id="aboutme">
+        <Typography variant="body1" gutterBottom>
+
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          My name is Quincy Maynor, and I am a recent U of M Coding Bootcamp graduate. I went to college for visual arts and chemistry, but was recently drawn to combining my background in STEM and art through coding. 
+        </Typography>
+      </Box>
       <Footer/>
     </>
   );

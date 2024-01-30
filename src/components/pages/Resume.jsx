@@ -1,16 +1,18 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+
+import Footer from '../Footer';
 
 export default function Resume() {
   return (
     <>
-      <h1 class="title3">Resume</h1>
-      <div class="resume" id="resume">
+      <Typography variant="h4" gutterBottom>
+        Resume
+      </Typography>
+      <Box class="resume" id="resume">
         <Card >
           <CardContent >
             <Typography gutterBottom variant="h6" component="div">
@@ -68,7 +70,7 @@ export default function Resume() {
               Self-Employed — Home Improvement Contractor
             </Typography>
             <Typography gutterBottom variant="body2" color="text.secondary">
-            January 2022-Present, Minneapolis, MN
+            January 2022 - Present, Minneapolis, MN
             </Typography>
             <Typography variant="body2" color="text.secondary">
               - Managed schedule, budget, and income for operations
@@ -84,7 +86,7 @@ export default function Resume() {
               Eastside Community Co-op — Housekeeping and Maintenance Lead
             </Typography>
             <Typography gutterBottom variant="body2" color="text.secondary">
-              October 2020-August 2022t,  Minneapolis, MN
+              October 2020 - August 2022,  Minneapolis, MN
             </Typography>
             <Typography variant="body2" color="text.secondary">
               - Oversaw the ordering of supplies for the housekeeping department
@@ -113,7 +115,8 @@ export default function Resume() {
             
           </CardContent>
         </Card>
-      </div>
+      </Box>
+      <Footer/>
     </>
   );
 }

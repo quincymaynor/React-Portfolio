@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 import NavTabs from './NavTabs';
 
@@ -25,7 +24,9 @@ export default function AltMain() {
     return (
     <Box sx={{ width: '100%' }}>
         <Container>
-        <h1>Quincy Maynor</h1>
+          <Typography variant="h3" gutterBottom>
+            Quincy Maynor
+          </Typography>
         </Container>
         <NavTabs value={value} handleChange={handleChange}/>
     </Box>
