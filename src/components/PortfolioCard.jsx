@@ -24,7 +24,7 @@ export default function PortfolioCard({ alt, img, title, description, site, repo
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="contained" color="secondary" size="small" href={site}>Visit the App</Button>
+        {/* <Button variant="contained" color="secondary" size="small" href={site}>Visit the App</Button> */}
         <Button variant="contained" color="secondary" size="small" href={repo}>Check the GitHub Repo</Button>
       </CardActions>
     </Card>

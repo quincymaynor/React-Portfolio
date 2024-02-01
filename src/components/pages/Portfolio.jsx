@@ -19,7 +19,7 @@ export default function Portfolio() {
               img="./CampaignPlannerDashboard.png"
               title="Campaign Creator"
               description="An app for keeping all your campaign notes in one place"
-              site="https://secret-coast-66847-6953fb83e518.herokuapp.com/"
+              site=""
               repo="https://github.com/quincymaynor/campaign-planner"
             >
             </PortfolioCard>

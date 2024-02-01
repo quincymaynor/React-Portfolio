@@ -113,11 +113,11 @@ export default function Resume() {
               EDUCATION
             </Typography>
 
-            <Typography gutterBottom variant="body2">
+            <Typography gutterBottom variant="body2" color="text.secondary">
               University of Minnesota Coding Bootcamp - Coding Certificate, October 2023
             </Typography>
 
-            <Typography gutterBottom variant="body2">
+            <Typography gutterBottom variant="body2" color="text.secondary">
               University of Minnesota, Morris - Bachelor of Arts, May 2020
             </Typography>
             {/* <Typography gutterBottom variant="body2" color="text.secondary">

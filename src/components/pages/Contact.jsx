@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { validateEmail } from "../../utils/helpers";
+import Alert from '@mui/material/Alert';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -13,6 +14,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e) => {
     const { target } = e;
@@ -61,9 +63,7 @@ function Contact() {
       setErrorMessage("Message is required");
       return;
     } else if (username && validateEmail(email) && email && message) {
-      alert(
-        `Thank you for reaching out, ${username}!`
-      );
+      setSuccessMessage(`Thank you for reaching out, ${username}! If your message is time sensitive, please email me with the link below`);
     }
 
     console.log(username);
@@ -119,9 +119,10 @@ function Contact() {
         </Box>
         <Button variant="text" color="primary" type="submit">Submit</Button>
         {errorMessage && (
-          <Typography variant="subtitle2" color='error'>
-            {errorMessage}
-          </Typography>
+          <Alert severity="error">{errorMessage}</Alert>
+        )}
+        {successMessage && (
+          <Alert severity="success">{successMessage}</Alert>
         )}
       </Box>
       <Footer/>
