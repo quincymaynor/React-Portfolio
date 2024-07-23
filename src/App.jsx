@@ -1,24 +1,23 @@
 import './App.css';
 // import MainContainer from './components/MainContainer';
-import AltMain from './components/AltMain';
+import MainContainer from './components/MainContainer';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00695c',
+      main: '#88af8b',
     },
     secondary: {
-      main: '#dcedc8',
+      main: '#1d2e1e',
     },
   },
 });
 
 function App() {
   return (
-    <div>
-      <ThemeProvider theme={theme}><AltMain /></ThemeProvider>;
-      {/* <MainContainer /> */}
+    <div class="app-background">
+      <ThemeProvider theme={theme}><MainContainer /></ThemeProvider>
     </div>
   );
 }

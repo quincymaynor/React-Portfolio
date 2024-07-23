@@ -3,11 +3,42 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { styled } from '@mui/material/styles';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import PermMediaOutlinedIcon from '@mui/icons-material/PermMediaOutlined';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 import Portfolio from './pages/Portfolio';
 import AboutMe from './pages/AboutMe';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+
+const StyledTabs = styled((props) => (
+  <Tabs
+    sx={{ bgcolor: '#354936', borderRadius: '35px', marginRight: '10px'}}
+    {...props}
+    TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
+  />
+))({
+  
+});
+
+// const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
+//   ({ theme }) => ({
+//     textTransform: 'none',
+//     fontWeight: theme.typography.fontWeightRegular,
+//     fontSize: theme.typography.pxToRem(15),
+//     marginRight: theme.spacing(1),
+//     color: 'rgba(255, 255, 255, 0.7)',
+//     '&.Mui-selected': {
+//       color: '#fff',
+//     },
+//     '&.Mui-focusVisible': {
+//       backgroundColor: 'rgba(100, 95, 228, 0.32)',
+//     },
+//   }),
+// );
 
 function samePageLinkNavigation(event) {
   if (
@@ -58,20 +89,21 @@ export default function NavTabs({ value, handleChange }) {
 
   return (
       <Box
-        sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', marginBottom: '20px' }}
+        sx={{ flexGrow: 1, display: 'flex', marginBottom: '20px'}}
       >
-        <Tabs
+        <StyledTabs
           orientation="vertical"
           value={value}
           onChange={handleChange}
-          sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <LinkTab label="Home" href="aboutme" />
-          <LinkTab label="Portfolio" href="portfolio" />
-          <LinkTab label="Resume" href="resume" />
-          <LinkTab label="Contact" href="contact" />
-        </Tabs>
-        <Container>{renderPage()}</Container>
+          <LinkTab icon={<HomeOutlinedIcon />} label="Home" href="aboutme" />
+          <LinkTab icon={<PermMediaOutlinedIcon />} label="Portfolio" href="portfolio" />
+          <LinkTab icon={<ArticleOutlinedIcon />} label="Resume" href="resume" />
+          <LinkTab icon={<EmailOutlinedIcon />} label="Contact" href="contact" />
+        </StyledTabs>
+        <Container sx={{}}>
+          {renderPage()}
+        </Container>
       </Box >
     );
   

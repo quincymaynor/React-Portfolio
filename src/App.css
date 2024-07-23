@@ -126,3 +126,12 @@ footer {
     flex-direction: column;
   }
 } */
+
+.app-background {
+  background-color: #1d2e1e;
+}
+
+/* .MuiBox-root {
+  border-radius: 30px;
+  border: 2px solid #ac8e48;
+} */
